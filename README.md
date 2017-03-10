@@ -2,9 +2,7 @@
 Scope: Student data is considered in comma-separated format where the columns are ID, name, and GPA. The program output will contain Id, student name, GPA and calculated percentile rank
 
 Run site in local server - http://localhost/percentile/
-
-Home page - We have Sample data and Custom data. In the custom data we can upload txt or csv files and see the results.
-                                                                     
+                                                                 
 Created by: Ruma Dey, 2017                                           
 
 ## Contents:
