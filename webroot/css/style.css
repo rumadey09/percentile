@@ -1,0 +1,50 @@
+//CSS Reste
+html, body, table, tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+        font-family: verdana, arial, sans-sarif;
+        color: #000;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th {
+	background-color: #ccc;
+}
+h1
+{
+    text-align: center;
+    font-size: 19px;
+}
+.studentClass 
+{
+    width: 100%;
+}
+.studentClass td, .studentClass th
+{
+    border: 1px solid #C6FFF9;
+    padding: 8px;
+    text-align: center;
+}
+.studentClass tr:nth-child(2n)
+{
+    background-color: #C6FFF9;
+}
+.studentClass td.alignleft
+{
+    text-align: left;
+}
+.main
+{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
