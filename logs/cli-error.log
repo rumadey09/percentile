@@ -1,0 +1,957 @@
+2017-03-09 11:46:25 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:46:25 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 11:46:25 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:55:07 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:55:07 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 11:55:07 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:55:32 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:55:33 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 11:55:33 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:58:35 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 11:58:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 11:58:35 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:00:12 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:00:12 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 12:00:12 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:01:23 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:01:23 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 12:01:23 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:01:51 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:01:51 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 12:01:51 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:02:56 Error: [Cake\Network\Exception\NotFoundException] Not Found
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(64): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplate()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:02:56 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\not_existing.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\not_existing.ctp',
+)
+Request URL: /pages/not_existing
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\View\View.php(591): Cake\View\View->_getViewFileName('not_existing')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('not_existing', NULL)
+#2 C:\xampp_space\htdocs\percentile\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('not_existing')
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('not_existing')
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#17 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#18 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/not_exis...', 'GET')
+#19 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(78): Cake\TestSuite\IntegrationTestCase->get('/pages/not_exis...')
+#20 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testMissingTemplateInDebug()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#28 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#29 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#30 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#31 {main}
+
+
+2017-03-09 12:02:56 Error: [Cake\Network\Exception\ForbiddenException] Forbidden
+Request URL: /pages/../Layout/ajax
+Stack Trace:
+#0 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('..', 'Layout', 'ajax')
+#1 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#2 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#3 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#14 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(426): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#15 C:\xampp_space\htdocs\percentile\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(344): Cake\TestSuite\IntegrationTestCase->_sendRequest('/pages/../Layou...', 'GET')
+#16 C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PagesControllerTest.php(93): Cake\TestSuite\IntegrationTestCase->get('/pages/../Layou...')
+#17 [internal function]: App\Test\TestCase\Controller\PagesControllerTest->testDirectoryTraversalProtection()
+#18 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(1120): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\PagesControllerTest), Array)
+#19 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(971): PHPUnit_Framework_TestCase->runTest()
+#20 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestResult.php(709): PHPUnit_Framework_TestCase->runBare()
+#21 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestCase.php(926): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PagesControllerTest))
+#22 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#23 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\Framework\TestSuite.php(728): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(521): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#25 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(188): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#26 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\src\TextUI\Command.php(118): PHPUnit_TextUI_Command->run(Array, true)
+#27 C:\xampp_space\htdocs\percentile\vendor\phpunit\phpunit\phpunit(52): PHPUnit_TextUI_Command::main()
+#28 {main}
+
+
+2017-03-09 12:37:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PercentileControllerTest.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+App\Test\TestCase\Controller\PercentileControllerTest::testAllRank() - ROOT\tests\TestCase\Controller\PercentileControllerTest.php, line 71
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1120
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 971
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 709
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 926
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 521
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 188
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 118
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 52
+
+
+
+2017-03-09 12:38:54 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp_space\htdocs\percentile\tests\TestCase\Controller\PercentileControllerTest.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+App\Test\TestCase\Controller\PercentileControllerTest::testAllRank() - ROOT\tests\TestCase\Controller\PercentileControllerTest.php, line 71
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1120
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 971
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 709
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 926
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 521
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 188
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 118
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 52
+
+
+
+2017-03-09 12:44:50 Warning: Warning (2): Division by zero in [C:\xampp_space\htdocs\percentile\src\Controller\Component\CalculationComponent.php, line 34]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+App\Controller\Component\CalculationComponent::getPercentile() - APP/Controller\Component\CalculationComponent.php, line 34
+App\Test\TestCase\Controller\PercentileControllerTest::testSingleRank() - ROOT\tests\TestCase\Controller\PercentileControllerTest.php, line 90
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1120
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 971
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 709
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 926
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 521
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 188
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 118
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 52
+
+
+
+2017-03-09 13:37:40 Warning: Warning (2): Division by zero in [C:\xampp_space\htdocs\percentile\src\Controller\Component\CalculationComponent.php, line 34]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+App\Controller\Component\CalculationComponent::getPercentile() - APP/Controller\Component\CalculationComponent.php, line 34
+App\Test\TestCase\Controller\PercentileControllerTest::testRankForSingleStudent() - ROOT\tests\TestCase\Controller\PercentileControllerTest.php, line 92
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1120
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 971
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 709
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 926
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 521
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 188
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 118
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 52
+
+
+
+2017-03-09 13:43:31 Warning: Warning (2): Division by zero in [C:\xampp_space\htdocs\percentile\src\Controller\Component\CalculationComponent.php, line 34]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+App\Controller\Component\CalculationComponent::getPercentile() - APP/Controller\Component\CalculationComponent.php, line 34
+App\Test\TestCase\Controller\PercentileControllerTest::testRankForSingleStudent() - ROOT\tests\TestCase\Controller\PercentileControllerTest.php, line 92
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1120
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 971
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 709
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 926
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 728
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 521
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 188
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 118
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 52
+
+
+
